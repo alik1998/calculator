@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1_calculator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.2/math.js" integrity="sha512-ap888g/h47w/Rp6mra1vA5NJtdPZJRxOuF/x7jkrL2NdRB8XrKwXIt/PMvre+oMPUdYt+6NNDjwbdwl/PkYXrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <style>
+    table {
+      border: solid 2px black;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    /* td {
+      float: left;
+    } */
+    .btn {
+      width: 100px;
+      padding: 20px 40px;
+      background-color: green;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+    }
+    /* .clr {
+        float: right;
+    } */
+    #Result {
+      width: 290px;
+      height: 60px;
+      font-size: 28px;
+    }
+  </style>
+  <body>
+    <table id="calcu">
+      <tr>
+        <td colspan="3">
+          <input type="text" id="Result" />
+        </td>
+        <td class="clr">
+          <input
+            class="btn"
+            id="clear"
+            type="button"
+            onclick="clr()"
+            value="c"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input
+            class="btn"
+            id="clear"
+            type="button"
+            onclick="dis('1')"
+            value="1"
+           
+          />
+        </td>
+        <td>
+          <input
+            class="btn"
+            id="clear"
+            type="button"
+            onclick="dis('2')"
+            value="2"
+            
+          />
+        </td>
+        <td>
+          <input
+            class="btn"
+            id="clear"
+            type="button"
+            onclick="dis('3')"
+            value="3"
+            
+          />
+        </td>
+        <td>
+          <input
+            class="btn"
+            id="clear"
+            type="button"
+            onclick="dis('/')"
+            value="/"
+            
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input
+            class="btn"
+            id="clear"
+            type="button"
+            onclick="dis('4')"
+            value="4"
+            
+          />
+        </td>
+        <td>
+          <input
+            class="btn"
+            id="clear"
+            type="button"
+            onclick="dis('5')"
+            value="5"
+            
+          />
+        </td>
+        <td>
+          <input
+            class="btn"
+            id="clear"
+            type="button"
+            onclick="dis('6')"
+            value="6"
+            
+          />
+        </td>
+        <td>
+          <input
+            class="btn"
+            id="clear"
+            type="button"
+            onclick="dis('*')"
+            value="*"
+            
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input
+            class="btn"
+            id="clear"
+            type="button"
+            onclick="dis('7')"
+            value="7"
+            
+          />
+        </td>
+        <td>
+          <input
+            class="btn"
+            id="clear"
+            type="button"
+            onclick="dis('8')"
+            value="8"
+            
+          />
+        </td>
+        <td>
+          <input
+            class="btn"
+            id="clear"
+            type="button"
+            onclick="dis('9')"
+            value="9"
+            
+          />
+        </td>
+        <td>
+          <input
+            class="btn"
+            id="clear"
+            type="button"
+            onclick="dis('-')"
+            value="-"
+            
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input
+            class="btn"
+            id="clear"
+            type="button"
+            onclick="dis('0')"
+            value="0"
+            
+          />
+        </td>
+        <td>
+          <input
+            class="btn"
+            id="clear"
+            type="button"
+            onclick="dis('.')"
+            value="."
+            
+          />
+        </td>
+        <td>
+          <input
+            class="btn"
+            id="clear"
+            type="button"
+            onclick="solve()"
+            value="="
+          />
+        </td>
+        <td>
+          <input
+            class="btn"
+            id="clear"
+            type="button"
+            onclick="dis('+')"
+            value="+"
+            
+          />
+        </td>
+      </tr>
+    </table>
+    <!-- <script src="calcu.js"></script> -->
+    <script src="tekrar.js"></script>
+  </body>
+</html>
